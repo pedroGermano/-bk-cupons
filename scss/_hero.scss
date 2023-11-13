@@ -83,11 +83,84 @@
     }
   }
 
-  .right-container{
+  .right-container {
+    position: relative;
     flex: 1;
     max-width: 52.8rem;
     height: 66.3rem;
     background: $yellow;
     border-radius: 0 0 12px 12px;
+    padding-top: 9.5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3rem;
+
+    .image {
+      position: absolute;
+      width: 68.4rem;
+      height: 49.2rem;
+      img {
+        position: absolute;
+
+        &.refri {
+          top: 2.5rem;
+          left: 0;
+          z-index: 1;
+        }
+        &.fritas {
+          top: 0;
+          right: 0;
+          z-index: 1;
+        }
+        &.lanche {
+          z-index: 2;
+          left: 5.2rem;
+          bottom: 0;
+        }
+        &.logo-bk {
+          bottom: 0.6rem;
+          right: 1rem;
+          z-index: 3;
+        }
+      }
+    }
+    .offer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.6rem;
+      &:before {
+        content: "";
+        width: 8rem;
+        height: 1.4rem;
+        background: url("../assets/img/line-left.svg") no-repeat center center;
+        display: inline-block;
+      }
+
+      &::after {
+        content: "";
+        width: 8rem;
+        height: 1.4rem;
+        background: url("../assets/img/line-right.svg") no-repeat center center;
+        display: inline-block;
+      }
+      p {
+        color: $white;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 1.6rem;
+        }
+        strong {
+          margin-left: 0.5rem;
+        }
+      }
+    }
   }
 }

@@ -147,9 +147,78 @@ header .container nav ul li a span {
   text-transform: uppercase;
 }
 .s-hero .right-container {
+  position: relative;
   flex: 1;
   max-width: 52.8rem;
   height: 66.3rem;
   background: #faaf18;
   border-radius: 0 0 12px 12px;
+  padding-top: 9.5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+.s-hero .right-container .image {
+  position: absolute;
+  width: 68.4rem;
+  height: 49.2rem;
+}
+.s-hero .right-container .image img {
+  position: absolute;
+}
+.s-hero .right-container .image img.refri {
+  top: 2.5rem;
+  left: 0;
+  z-index: 1;
+}
+.s-hero .right-container .image img.fritas {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.s-hero .right-container .image img.lanche {
+  z-index: 2;
+  left: 5.2rem;
+  bottom: 0;
+}
+.s-hero .right-container .image img.logo-bk {
+  bottom: 0.6rem;
+  right: 1rem;
+  z-index: 3;
+}
+.s-hero .right-container .offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.s-hero .right-container .offer:before {
+  content: "";
+  width: 8rem;
+  height: 1.4rem;
+  background: url("../assets/img/line-left.svg") no-repeat center center;
+  display: inline-block;
+}
+.s-hero .right-container .offer::after {
+  content: "";
+  width: 8rem;
+  height: 1.4rem;
+  background: url("../assets/img/line-right.svg") no-repeat center center;
+  display: inline-block;
+}
+.s-hero .right-container .offer p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  display: flex;
+  align-items: center;
+}
+.s-hero .right-container .offer p img {
+  margin-right: 1.6rem;
+}
+.s-hero .right-container .offer p strong {
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
