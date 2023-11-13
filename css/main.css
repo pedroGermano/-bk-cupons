@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 124.9rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 9rem;
+  background: #fff;
+  display: flex;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 7.7rem;
+}
+header .container nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+header .container nav ul li a span {
+  color: #59291c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.s-hero {
+  width: 100%;
+  height: 62.3rem;
+  background: linear-gradient(164deg, rgba(239, 225, 218, 0) 3.82%, #f5ece7 90.95%);
+}
+.s-hero .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.s-hero .left-container {
+  padding-top: 12rem;
+  flex: 1;
+  max-width: 52.7rem;
+}
+.s-hero .left-container h3 {
+  color: #faaf18;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3.7rem;
+}
+.s-hero .left-container h3:after {
+  content: "";
+  flex: 1;
+  max-width: 29rem;
+  height: 2px;
+  background: url(../assets/img/line.svg) no-repeat center center;
+  display: inline-block;
+}
+.s-hero .left-container .value {
+  position: relative;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 3.7rem;
+}
+.s-hero .left-container .value:after {
+  content: "";
+  background: url("../assets/img/arrow-btn.svg") no-repeat center center;
+  width: 4.3rem;
+  height: 3.8rem;
+  position: absolute;
+  right: -6.7rem;
+  top: 3rem;
+}
+.s-hero .left-container .value h2 {
+  color: #faaf18;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 6.5rem;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.s-hero .left-container .value span {
+  color: #59291c;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.3rem; /* 176.923% */
+  letter-spacing: -0.371px;
+}
+.s-hero .left-container .value button {
+  padding: 2.2rem 5.2rem;
+  background: #59291c;
+  border-radius: 6px;
+  box-shadow: 0px 10px 40px 0px rgba(89, 41, 28, 0.6);
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.s-hero .right-container {
+  flex: 1;
+  max-width: 52.8rem;
+  height: 66.3rem;
+  background: #faaf18;
+  border-radius: 0 0 12px 12px;
+}/*# sourceMappingURL=main.css.map */
