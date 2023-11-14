@@ -38,4 +38,29 @@
       gap: 1.6rem;
     }
   }
+
+  .area-slide {
+    position: relative;
+    margin-top: 6.2rem;
+    .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6.6rem;
+      height: 6.6rem;
+      background: $yellow;
+      z-index: 2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.prev{
+        left: -3.3rem;
+      }
+      &.next{
+        right: -3.3rem;
+        transform: rotate(180deg);
+      }
+    }
+  }
 }

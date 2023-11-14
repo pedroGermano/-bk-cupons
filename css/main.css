@@ -321,4 +321,28 @@ header .container nav ul li a span {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.6rem;
+}
+.s-combos .area-slide {
+  position: relative;
+  margin-top: 6.2rem;
+}
+.s-combos .area-slide .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6.6rem;
+  height: 6.6rem;
+  background: #faaf18;
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-combos .area-slide .btn.prev {
+  left: -3.3rem;
+}
+.s-combos .area-slide .btn.next {
+  right: -3.3rem;
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
