@@ -339,10 +339,101 @@ header .container nav ul li a span {
   align-items: center;
   justify-content: center;
 }
+.s-combos .area-slide .btn.swiper-button-disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
 .s-combos .area-slide .btn.prev {
   left: -3.3rem;
 }
 .s-combos .area-slide .btn.next {
   right: -3.3rem;
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.s-combos .area-slide .slide-combos {
+  overflow: hidden;
+}
+.s-combos .area-slide .slide-combos .card-combo {
+  width: 100%;
+  height: 49.3rem;
+  background: #f5ece7;
+  border-radius: 0.6rem;
+}
+.s-combos .area-slide .slide-combos .card-combo .image {
+  position: relative;
+  width: 100%;
+  height: 34rem;
+  overflow: hidden;
+  border-bottom: 3px dotted #fff;
+}
+.s-combos .area-slide .slide-combos .card-combo .image > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.s-combos .area-slide .slide-combos .card-combo .image button {
+  position: absolute;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  top: 2.5rem;
+  right: 2.6rem;
+  z-index: 2;
+}
+.s-combos .area-slide .slide-combos .card-combo .info {
+  padding: 3.6rem 4.4rem;
+}
+.s-combos .area-slide .slide-combos .card-combo .info strong {
+  color: #59291c;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: -0.201px;
+  margin-bottom: 1.4rem;
+  display: block;
+}
+.s-combos .area-slide .slide-combos .card-combo .info h3 {
+  color: #ed7902;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 1.477px;
+  text-transform: uppercase;
+}
+.s-combos .ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.7rem;
+}
+.s-combos .ctrl .swiper-pagination {
+  position: relative;
+  bottom: 0;
+  width: auto;
+}
+.s-combos .ctrl .swiper-pagination-bullet {
+  background: #ed7902;
+  opacity: 0.5;
+}
+.s-combos .ctrl .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ed7902;
+  transform: scale(1.1);
+}
+.s-combos .ctrl button {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.s-combos .ctrl button span {
+  color: #faaf18;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: -0.176px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

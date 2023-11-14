@@ -3,12 +3,12 @@ let slide_combos = new Swiper('.slide-combos', {
   spaceBetween: 32,
   speed: 800,
   pagination: {
-    el: '',
+    el: '.s-combos .ctrl .swiper-pagination',
     clickable: true
   },
   navigation: {
-    nextEl: '',
-    prevEl: ''
+    nextEl: '.s-combos .area-slide .btn.next',
+    prevEl: '.s-combos .area-slide .btn.prev'
   }
 })
 
