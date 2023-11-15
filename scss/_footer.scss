@@ -1,0 +1,71 @@
+footer {
+  .main-area {
+    background: $brown;
+    padding-top: 4.9rem;
+    padding-bottom: 4.4rem;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & > ul {
+        gap: 3.5rem;
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        a {
+          color: $white;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1.5rem;
+          letter-spacing: -0.429px;
+          transition: color .3s ease;
+          &:hover{
+            color: $orange;
+          }
+        }
+      }
+    }
+    .logo {
+      width: 9.6rem;
+      height: 9.6rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $white;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 3.1rem;
+      span {
+        color: $white;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: -0.429px;
+      }
+      ul {
+        gap: 2.3rem;
+        
+      }
+    }
+  }
+
+  .copy {
+    background: #5d2a1c;
+    padding: 1.4rem 0;
+    text-align: center;
+
+    p {
+      color: $white;
+      font-size: 1.4rem;
+      line-height: 2.3rem;
+      letter-spacing: -0.4px;
+    }
+  }
+}

@@ -61,12 +61,16 @@ header .container nav ul li a {
   align-items: center;
   gap: 1.1rem;
 }
+header .container nav ul li a:hover span {
+  color: #ed7902;
+}
 header .container nav ul li a span {
   color: #59291c;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: bold;
+  transition: color 0.3s ease-out;
 }
 
 .s-hero {
@@ -145,6 +149,7 @@ header .container nav ul li a span {
   font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
+  animation: pulse 2s infinite;
 }
 .s-hero .right-container {
   position: relative;
@@ -223,6 +228,17 @@ header .container nav ul li a span {
   margin-left: 0.5rem;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .s-offer {
   width: 100%;
   height: 20rem;
@@ -272,6 +288,10 @@ header .container nav ul li a span {
   justify-content: center;
   gap: 1.9rem;
   padding: 3rem 0;
+  transition: background 0.1s ease-out;
+}
+.s-offer button:hover {
+  background: #f5ece7;
 }
 .s-offer button span {
   color: #475993;
@@ -281,6 +301,17 @@ header .container nav ul li a span {
   letter-spacing: -0.301px;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .s-combos {
   padding: 7rem 0;
 }
@@ -304,6 +335,7 @@ header .container nav ul li a span {
   justify-content: center;
   flex-direction: column;
   gap: 0.9rem;
+  transition: all 0.3s ease;
 }
 .s-combos .highlights .box h3 {
   color: #fff;
@@ -321,6 +353,11 @@ header .container nav ul li a span {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.6rem;
+}
+.s-combos .highlights ul li .box:hover {
+  background: #59291c;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px 0px rgba(89, 41, 28, 0.6);
 }
 .s-combos .area-slide {
   position: relative;
@@ -358,6 +395,11 @@ header .container nav ul li a span {
   height: 49.3rem;
   background: #f5ece7;
   border-radius: 0.6rem;
+  overflow: hidden;
+}
+.s-combos .area-slide .slide-combos .card-combo:hover .image > img {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .s-combos .area-slide .slide-combos .card-combo .image {
   position: relative;
@@ -371,6 +413,7 @@ header .container nav ul li a span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.5s ease;
 }
 .s-combos .area-slide .slide-combos .card-combo .image button {
   position: absolute;
@@ -429,6 +472,9 @@ header .container nav ul li a span {
   align-items: center;
   gap: 1.4rem;
 }
+.s-combos .ctrl button:hover span {
+  color: #ed7902;
+}
 .s-combos .ctrl button span {
   color: #faaf18;
   font-family: "Ubuntu", sans-serif;
@@ -436,4 +482,67 @@ header .container nav ul li a span {
   font-weight: bold;
   letter-spacing: -0.176px;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+footer .main-area {
+  background: #59291c;
+  padding-top: 4.9rem;
+  padding-bottom: 4.4rem;
+}
+footer .main-area .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .main-area .container > ul {
+  gap: 3.5rem;
+}
+footer .main-area ul {
+  display: flex;
+  align-items: center;
+}
+footer .main-area ul li a {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.429px;
+  transition: color 0.3s ease;
+}
+footer .main-area ul li a:hover {
+  color: #ed7902;
+}
+footer .main-area .logo {
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+footer .main-area .social {
+  display: flex;
+  align-items: center;
+  gap: 3.1rem;
+}
+footer .main-area .social span {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.429px;
+}
+footer .main-area .social ul {
+  gap: 2.3rem;
+}
+footer .copy {
+  background: #5d2a1c;
+  padding: 1.4rem 0;
+  text-align: center;
+}
+footer .copy p {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  letter-spacing: -0.4px;
 }/*# sourceMappingURL=main.css.map */
