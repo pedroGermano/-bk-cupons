@@ -21,7 +21,7 @@
     gap: 4.1rem;
     flex: 1;
     max-width: 59.7rem;
-    
+
     h3 {
       color: $white;
       font-family: "Ubuntu", sans-serif;
@@ -67,15 +67,3 @@
   }
 }
 
-
-@keyframes pulse {
-  0%{
-    transform: scale(1);
-  }
-  70%{
-    transform: scale(1.05);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
